@@ -1,9 +1,10 @@
-import "./signup.css";
+// import "";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { SyncLoader } from "react-spinners";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+
 
 const SignUp = () => {
   const [formData, setFormData] = useState({
