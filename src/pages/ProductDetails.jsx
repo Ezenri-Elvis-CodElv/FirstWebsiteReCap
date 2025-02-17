@@ -1,4 +1,4 @@
-import "./ProductDetails.css";
+import "./productdetails.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const ProductDetails = () => {
@@ -32,7 +32,7 @@ const ProductDetails = () => {
             </div>
             <div className="buttonwrapper">
               <div className="buttoncart" onClick>
-                <p>Add To Cart</p>
+                 <button className="bttn">Add To Cart</button>
               </div>
               <button class="sharebtn">
                 <i class="fas fa-share-alt"></i>

@@ -1,4 +1,4 @@
-import "./Header.css";
+import "./header.css";
 import {  FaTimes } from "react-icons/fa";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { IoSearchOutline } from "react-icons/io5";
@@ -51,7 +51,7 @@ const Header = () => {
 
         <div className="Categories">
           <ul className="ul-header">
-            <li className="li-header" onClick={() => navigate("/home")}>Home</li>
+            <li className="li-header" onClick={() => navigate("/")}>Home</li>
             <li className="li-header">Men</li>
             <li className="li-header">Women</li>
             <li className="li-header">Baby Collections</li>

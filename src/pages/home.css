@@ -707,7 +707,7 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .product-categories{
+    /* .product-categories{
     width: 200%;
     height: 100vh;
      display: flex;
@@ -719,5 +719,5 @@
     .text-container1{
         width: 80%;
         height: 80%;
-    }
+    } */
 }

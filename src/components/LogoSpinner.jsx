@@ -1,5 +1,5 @@
 import React from 'react';
-import './LogoSpinner.css';
+import './logospinner.css';
 import spinner from "../assets/spinner.webp"
 
 const LogoSpinner = () => {

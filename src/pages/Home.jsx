@@ -1,4 +1,4 @@
-import "./Home.css"
+import "./home.css"
 import React, { useState, useEffect } from "react";
 import { FaShoppingCart, FaHeart, FaSearch } from "react-icons/fa";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";

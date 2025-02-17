@@ -1,7 +1,7 @@
 import { LuInstagram } from "react-icons/lu";
 import { TiSocialLinkedin } from "react-icons/ti";
 import { FaFacebook, FaTwitter, FaYoutube } from "react-icons/fa";
-import "./Header2.css"
+import "./header2.css"
 
 const Header2 = () => {
   return (

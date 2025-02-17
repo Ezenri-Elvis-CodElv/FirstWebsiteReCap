@@ -104,8 +104,13 @@ h3 {
     font-family: sans-serif;
     margin-top: 15px;
 }
-p {
-    margin: 10px 5px 30px ;
+.bttn{
+    width: 180px;
+    height: 40px;
+    font-size: 17px;
+    font-weight: smaller;
+    border: none;
+    font-family: sans-serif;
 }
 .pricetextholder span {
     font-weight: 300;
