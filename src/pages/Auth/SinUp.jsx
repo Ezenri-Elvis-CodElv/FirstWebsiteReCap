@@ -1,4 +1,4 @@
-import "./SignUp.css";
+import "./signUp.css";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { SyncLoader } from "react-spinners";
