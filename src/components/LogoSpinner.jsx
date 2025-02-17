@@ -1,4 +1,3 @@
-import React from 'react';
 import './logospinner.css';
 import spinner from "../assets/spinner.webp"
 

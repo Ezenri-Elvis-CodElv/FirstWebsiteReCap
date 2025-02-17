@@ -3,7 +3,7 @@ import { FiEyeOff, FiEye } from "react-icons/fi";
 import { useContext, useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import { AuthContext } from "../../routes/PrivateRoutes";
+// import { AuthContext } from "../../routes/PrivateRoutes";
 
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -11,7 +11,6 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
   const url = "https://movie-app-ch5.onrender.com/api/user/log-in";
-    // const {login} = useContext(AuthContext)
   const handleLogin = async (e) => {
     e.preventDefault();
 
@@ -25,8 +24,7 @@ const Login = () => {
         headers: { "Content-Type": "application/json" }
       });
 
-      console.log("Login Response:", response);
-    //   login()
+      // console.log("Login Response:", response);
       localStorage.setItem("userData", JSON.stringify(response?.data?.data));
 
       alert(response?.data?.message || "Login Successful!");

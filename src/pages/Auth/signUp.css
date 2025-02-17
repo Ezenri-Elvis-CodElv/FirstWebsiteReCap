@@ -1,4 +1,3 @@
-/* Background Styling */
 .signup-container {
     display: flex;
     justify-content: center;
@@ -9,7 +8,6 @@
     background-color: #f4f4f4;
   }
   
-  /* Form Box */
   .signup-form {
       width: 47%;
       height: 90%;
@@ -62,7 +60,6 @@
     
   }
   
-  /* Input Fields */
   .signup-input1 {
     width: 99%;
     height: 70px;
@@ -85,12 +82,10 @@
     align-items: center;
     padding: 20px;
   }
-  /* Placeholder Styling */
   .signup-input::placeholder {
     color: grey;
   }
   
-  /* Sign Up Button */
   .signup-button {
     width: 25%;
     height: 60px;
@@ -109,14 +104,12 @@
     cursor: not-allowed;
   }
   
-  /* Login Text */
   .login-text {
     /* margin-top: 15px; */
     font-size: 14px;
     color: navy;
   }
   
-  /* Login Link */
   .login-link {
     color: red;
     cursor: pointer;

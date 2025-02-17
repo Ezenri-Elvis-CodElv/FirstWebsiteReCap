@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import LogoSpinner from './LogoSpinner';
-import Home from '../pages/Home';
 import PrivateRoute from '../routes/PrivateRoutes';
 
 const Spinner= () => {
