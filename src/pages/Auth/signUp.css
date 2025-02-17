@@ -1,0 +1,129 @@
+/* Background Styling */
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: #f4f4f4;
+  }
+  
+  /* Form Box */
+  .signup-form {
+      width: 47%;
+      height: 90%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    /* border-radius: 10px; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;    /* width: 350px; */
+    text-align: left;
+  }
+
+  .signupheader{
+    width: 95%;
+    height: 15%;
+    /* background-color: blue; */
+    display: flex;
+    color: navy;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    /* font-size: 18px; */
+  }
+  .signupheader h1{
+    font-size: 25px;
+  }
+  .signupheader p{
+    font-size: 14px;
+    color: grey;
+  }
+  
+  /* Title Styling */
+  .signup-title {
+    color: navy;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .signuphero{
+    width: 95%;
+    height: 70%;
+    /* background-color: blueviolet; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: sans-serif;
+    font-weight: 300;
+    
+  }
+  
+  /* Input Fields */
+  .signup-input1 {
+    width: 99%;
+    height: 70px;
+    /* padding: 10px; */
+    /* margin: 10px 0; */
+    /* border: 1px solid #ccc; */
+    /* border-radius: 5px; */
+    font-size: 12px;
+    color: navy;
+    /* background-color: white; */
+  }
+  
+  .signupfooter{
+    width: 95%;
+    height: 25%;
+    /* background-color: brown; */
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  /* Placeholder Styling */
+  .signup-input::placeholder {
+    color: grey;
+  }
+  
+  /* Sign Up Button */
+  .signup-button {
+    width: 25%;
+    height: 60px;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    /* border-radius: 5px; */
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .signup-button:disabled {
+    background-color: darkred;
+    cursor: not-allowed;
+  }
+  
+  /* Login Text */
+  .login-text {
+    /* margin-top: 15px; */
+    font-size: 14px;
+    color: navy;
+  }
+  
+  /* Login Link */
+  .login-link {
+    color: red;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .login-link:hover {
+    text-decoration: underline;
+  }
+  

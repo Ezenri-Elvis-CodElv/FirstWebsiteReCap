@@ -1,0 +1,187 @@
+.FooterWrapper{
+    width: 100%;
+    height: 110vh;
+    background-color: rgb(31, 29, 29);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.FooterHlder{
+    width: 83%;
+    height: 100%;
+    /* background-color: blue; */
+}
+
+.FooterHeader{
+    width: 100%;
+    height: 25%;
+    /* background-color: brown; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid grey;
+}
+
+.Footertxt1{
+    width: 30%;
+    height: 100%;
+    /* background-color: aqua; */
+    font-family: sans-serif;
+    font-size: 15px;
+    color: white;
+    font-size: bold;
+    display: flex;
+    align-items: start;
+    padding: 10px;
+    justify-content: center;
+    flex-direction: column;
+    /* margin: 20px; */
+}
+.FooterInp1{
+    width: 55%;
+    height: 100%;
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    
+}
+.EmailFooter{
+    width: 60%;
+    height: 20%;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.scrbtn{
+    width: 20%;
+    height: 30%;
+    background-color: red;
+    color: white;
+    border: none;
+}
+
+.FooterIcon1{
+    width: 15%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* font-size: 25px; */
+    
+}
+
+
+.ifooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #6d6d6d;
+    transition: color 0.3s ease, transform 0.6s ease-in-out;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.ifooter:hover {
+    color: red;
+    transform: rotateY(180deg);
+  }
+
+
+.FooterNav{
+    width: 100%;
+    height: 50%;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid grey;
+
+}
+.Footerfooter{
+    width: 100%;
+    height: 10%;
+    /* background-color: purple; */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 40px;
+    font-size: 18px;
+    font-weight: smaller;
+}
+
+.Footerlogo{
+    width: 20%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    /* background: #9c2d2d; */
+}
+.FooterImagelogo{
+    width: 160px;
+    height: 39px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.SpnFooter{
+    color: red;
+}
+
+.FooterTxts{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aqua; */
+    gap: 5px;
+}
+
+.FooterMidText{
+    width: 20%;
+    height: 100%;
+    /* background-color: #9c2d2d; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding-right: 20px;
+    margin-top: 10px; */
+}
+.FooterMidText h3{
+    transition: all 350ms ease-in-out;
+    transform: scaleY(1);
+    color: white;
+    cursor: pointer;
+}
+
+.FooterMidText h3:hover{
+    transition: all 350ms ease-in;
+    transform: scaleY(1.07);
+    text-decoration: underline;
+}
+.FooterMidText  p{
+    transition: all 350ms ease-in-out;
+    transform: scaleY(1);
+    color: white;
+    cursor: pointer;
+}
+
+.FooterMidText  p:hover{
+    transition: all 350ms ease-in;
+    transform: scaleY(1.07);
+    text-decoration: underline;
+}
