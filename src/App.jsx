@@ -7,7 +7,7 @@ import Dashboard from './pages/Dashboard';
 import Cart from './pages/Cart';
 import Login from './pages/Auth/Login';
 import Collection from './pages/Collection';
-import SignUp from './pages/Auth/SinUp';
+import SignUp from './pages/Auth/SignUp';
 import MensCollection from './pages/MensCollection';
 import WomensCollection from './pages/WomensCollection';
 // import AuthProvider from './Components/AuthProvider';
