@@ -1,4 +1,4 @@
-import "./Login.css";
+import "./login.css";
 import { FiEyeOff, FiEye } from "react-icons/fi";
 import { useContext, useState } from "react";
 import axios from "axios";
