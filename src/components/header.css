@@ -1,12 +1,16 @@
 .Headerwrapper{
     width: 100%;
     height: 15vh;
-    display: flex;
+    display: block;
     flex-direction: row;
     align-items: center;
     background-color: white;
     justify-content: space-around;
     /* border-bottom: 1px solid grey; */
+}
+
+.headermobilev{
+    display: none;
 }
 
 
@@ -22,7 +26,7 @@
     position: sticky; 
     text-align: center;
     transition: top 0.4s ease-in-out;
-    z-index: 1000;
+    z-index: 999999999;
       
 }
 
@@ -51,6 +55,20 @@
     flex-direction: row;
     align-items: center;
 
+}
+
+
+link{
+    text-decoration: none;
+    list-style-type: none;
+    text-underline-offset: none;
+    cursor: pointer;
+    color: white;
+}
+
+link:hover{
+color: red;
+transform: scale(1.07);
 }
 
 .ul-header{
@@ -225,3 +243,130 @@
 .cartcount:hover{
     transform: scale(1.08);
 }
+
+@media only screen and (max-width: 480px) {
+    .Header{
+        display: none;
+    }
+    
+        .headermobilev {
+          width: 100%;
+          height: 15vh;
+          background-color: #4c4c4c;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        
+        .mobileicon {
+          width: 100%;
+          height: 7vh;
+          background-color: white;
+        }
+        
+        .mibleimg {
+          width: 180px;
+          padding-left: 15px;
+        }
+        
+        .menuhld {
+          width: 100%;
+          height: 8vh;
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+          align-items: center;
+          padding-right: 20px;
+        }
+        
+        .menu {
+          width: 100px;
+          height: 30px;
+          background-color: #222;
+          color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-weight: 400;
+          font-size: 18px;
+          font-family: sans-serif;
+          /* padding: fit; */
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        
+        .categorymenu {
+          width: 100vw;
+          height: fit-content; 
+          position: absolute;
+          top: 15vh; 
+          left: 0;
+          background-color: #4c4c4c;
+          color: white;
+          z-index: 1000;
+          padding: 20px;
+          padding-left: 30px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          text-align: left;
+          animation: slideDown 0.5s ease forwards;
+        }
+        
+        .menudown {
+          font-size: 16px;
+          color: white;
+          cursor: pointer;
+          border-top: 1px solid grey;
+          position: relative;
+          cursor: pointer;
+          margin-bottom: 10px;
+        }
+        
+        .menudown ul {
+          list-style: none; 
+          padding-left: 30px;
+          margin-top: 10px;
+          gap: 5px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          text-align: left;
+        }
+        
+        .menudown ul li {
+          margin-bottom: 10px;
+          cursor: pointer;
+          gap: 10px;
+          display: flex;
+          /* flex-direction: column; */
+          /* justify-content: center; */
+          text-align: left;
+          transition: transform 0.3s ease, color 0.3s ease;
+        }
+        
+        .menudown ul li:hover {
+          transform: scale(1.03);
+          color: red;
+        }
+        
+        .menudownheder {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+        }
+        
+        /* Dropdown Slide Down Animation */
+        @keyframes slideDown {
+          from {
+            transform: translateY(-100%);
+            opacity: 0;
+          }
+          to {
+            transform: translateY(0);
+            opacity: 1;
+          }
+        }
+      }
+       

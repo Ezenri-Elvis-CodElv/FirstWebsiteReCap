@@ -66,6 +66,71 @@ const Footer = () => {
             <div>Copyright ©2025 All rights reserved | This template is made with <span className="SpnFooter"> ❤</span> by <span className="SpnFooter">Colorlib</span> </div>
         </div>
       </div>
+
+      
+      <div className="mobileviewfooterwrapper">
+      <div className="mobileFooterHlder">
+        <div className="mobileFooterHeader">
+             <div className="mobileFootertxt1">
+                  <h3>Subscribe Newsletter</h3>
+                  <p>Subscribe newsletter to get 5% on all products.</p>
+             </div>
+             <div className="moblieFooterInp1">
+                 <input type="text" placeholder="Enter Your Email"  className="mobileEmailFooter"/>
+                 <button className="scrbtnmobileEmailFooter">Subscribe</button>
+             </div>
+             <div className="mobileFooterIcon1">
+                             <i className="mobileifooter"><FaFacebook /></i>
+                             <i className="mobileifooter"> <FaTwitter /></i>
+                             <i className="mobileifooter"> <FaYoutube /></i>
+             </div>
+        </div>
+        <div className="mobileFooterNav">
+           <div className="mobileFooterlogo">
+            <img src="src/assets/Footerlogo.webp" alt="" className="mobileFooterImagelogo"/>
+           </div>
+           <div className="mobileFooterTxts">
+            <div  className="mobileFooterMidText">
+              <h3>Shop Men</h3>
+              <p>Clothing Fashion</p>
+              <p>Winter</p>
+              <p>Summer</p>
+              <p>Formal</p>
+              <p>Casual</p>
+              </div>
+            <div  className="mobileFooterTxts">
+              <h3>Shop Women</h3>
+              <p>Clothing Fashion</p>
+              <p>Winter</p>
+              <p>Summer</p>
+              <p>Formal</p>
+              <p>Casual</p>
+              </div>
+            <div  className="mobileFooterTxts">
+              <h3> Baby Collection</h3>
+              <p>Clothing Fashion</p>
+              <p>Winter</p>
+              <p>Winter</p>
+              <p>Summer</p>
+              <p>Formal</p>
+              <p>Casual</p>
+              </div>
+            <div  className="mobileFooterTxts">
+              <h3>Quick Links</h3>
+              <p>Track Your Order</p>
+              <p>Support</p>
+              <p>FAQ</p>
+              <p>Carrier</p>
+              <p>About</p>
+              <p>Contact Us</p>
+              </div>
+           </div>
+        </div>
+        <div className="mobileFooterfooter">
+            <div>Copyright ©2025 All rights reserved | This template is made with <span className="SpnFooter"> ❤</span> by <span className="SpnFooter">Colorlib</span> </div>
+        </div>
+      </div>
+      </div>
     </div>
   )
 }

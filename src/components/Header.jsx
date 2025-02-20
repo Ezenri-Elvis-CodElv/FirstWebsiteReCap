@@ -4,15 +4,23 @@ import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { IoSearchOutline } from "react-icons/io5";
 import { CgProfile } from "react-icons/cg";
 import { HiOutlineShoppingCart } from "react-icons/hi";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { NavLink, useNavigate } from "react-router";
-
-
+import { RxHamburgerMenu } from "react-icons/rx";
+import { IoIosArrowDown } from "react-icons/io";
 
 
 
 
 const Header = () => {
+
+  const [menubar, setMenubar] = useState(false);
+  const [showPageDropdown, setShowPageDropdown] = useState(false);
+  const [showBlogDropdown, setShowBlogDropdown] = useState(false);
+
+  const toggleMenu = () => setMenubar(!menubar);
+  const togglePageDropdown = () => setShowPageDropdown(!showPageDropdown);
+  const toggleBlogDropdown = () => setShowBlogDropdown(!showBlogDropdown);
 
      const  navigate = useNavigate()
     const [showSearch, setShowSearch] = useState(false);
@@ -26,18 +34,30 @@ const Header = () => {
 
   const [activeDropdown, setActiveDropdown] = useState(null);
 
-  // Show dropdown on hover
+
   const handleMouseEnter = (dropdownName) => {
-    setActiveDropdown(dropdownName); // Open only the hovered dropdown
+    setActiveDropdown(dropdownName); 
   };
 
-  // Hide dropdown when leaving it (5s delay)
   const handleMouseLeave = () => {
     setTimeout(() => {
       setActiveDropdown(null);
     }, 5000);
   };
+  const [isFixed, setIsFixed] = useState(false);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 90) { 
+        setIsFixed(true);
+      } else {
+        setIsFixed(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
  
   
 
@@ -79,7 +99,7 @@ const Header = () => {
                   <NavLink to={"/productdetails"}>
                   <li>Product Details</li></NavLink>
 
-                  <NavLink>
+                  <NavLink to={"productcheckout"}>
 
                   <li>Product Checkout</li>
                   </NavLink>
@@ -133,6 +153,49 @@ const Header = () => {
           </i>
         </div>
       </div>
+      <div  className={`headermobilev ${isFixed ? "fixed" : ""}`}>
+      <div className="mobileicon">
+        <img src="src/assets/logo.webp" alt="Logo" className="mibleimg" />
+      </div>
+      <div className="menuhld">
+        <div className="menu">
+          <span onClick={toggleMenu}>MENU</span>
+          <RxHamburgerMenu />
+        </div>
+      </div>
+      {menubar && (
+        <div className="categorymenu">
+          <div className="menudownheder">
+            <div className="menudown" onClick={() => navigate("/")}>Home</div>
+            <div className="menudown">Men</div>
+            <div className="menudown">Women</div>
+            <div className="menudown">Baby Collection</div>
+            <div className="menudown" onClick={togglePageDropdown}>
+              Page <IoIosArrowDown />
+              {showPageDropdown && (
+                <ul className="dropdown-list">
+                  <li onClick={() => navigate("/login")}>Login</li>
+                  <li onClick={() => navigate("/cart")}>Cart</li>
+                  <li onClick={() => navigate("/productdetails")}>Product Details</li>
+                  <li onClick={() => navigate("/productpage")}>Product Checkout</li>
+                </ul>
+              )}
+            </div>
+            <div className="menudown" onClick={toggleBlogDropdown}>
+              Blog <IoIosArrowDown />
+              {showBlogDropdown && (
+                <ul className="dropdown-list">
+                  <li>Blog</li>
+                  <li>Element</li>
+                  <li>Blog Details</li>
+                </ul>
+              )}
+            </div>
+            <div className="menudown">Contact</div>
+          </div>
+        </div>
+      )}
+    </div>
     </div>
   );
 }

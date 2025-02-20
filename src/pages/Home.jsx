@@ -6,6 +6,12 @@ import { PiTruckLight } from "react-icons/pi";
 import { CiCreditCard1 } from "react-icons/ci";
 import { GiBank } from "react-icons/gi";
 import { TbClock24 } from "react-icons/tb";
+import { useNavigate } from "react-router";
+import {  FaTimes } from "react-icons/fa";
+// import { MdOutlineKeyboardArrowDown } from "react-icons/md";
+import { IoSearchOutline } from "react-icons/io5";
+import { CgProfile } from "react-icons/cg";
+import { HiOutlineShoppingCart } from "react-icons/hi";
 
 
 
@@ -33,6 +39,8 @@ const testimonials = [
   },
 ];
 
+
+
 const images9 = [
   { url: "src/assets/Carousel1.webp" },
   { url: "src/assets/Carousel2.webp" },
@@ -59,6 +67,14 @@ const youLikeImages = [
 
 
 const Home = () => {
+
+  const [menubar, setMenubar] = useState(false);
+  const [showPageDropdown, setShowPageDropdown] = useState(false);
+  const [showBlogDropdown, setShowBlogDropdown] = useState(false);
+
+  const toggleMenu = () => setMenubar(!menubar);
+  const togglePageDropdown = () => setShowPageDropdown(!showPageDropdown);
+  const toggleBlogDropdown = () => setShowBlogDropdown(!showBlogDropdown);
 
   const [currentCarouselIndex2, setCurrentCarouselIndex2] = useState(0);
 
@@ -152,8 +168,9 @@ useEffect(() => {
 
   return (
     <div className="HomeWrapper">
-           <div>
+           <div className="first">
       <nav className="navbar">
+        <h5>Period Offer <span className="spam">Shop Now</span> </h5>
         <p>Sale Up To 50% Biggest Discounts. Hurry! Limited Perriod Offer <span className="spam">Shop Now</span></p>
       </nav>
 
@@ -161,6 +178,27 @@ useEffect(() => {
         className="hero-section"
         style={{ backgroundImage: `url(${images[currentIndex].url})` }} >
         <div className={`text-container ${images[currentIndex].align}`}>
+        {/* <div className="navbaricons1">
+                    <i className="i-nav"><IoSearchOutline className="search-icon" onClick={toggleSearch} /> 
+                    {showSearch && (
+                    <div className="search-dropdown">
+                      <input
+                        type="text"
+                        placeholder="Search Here"
+                        value={searchTerm}
+                        onChange={(e) => setSearchTerm(e.target.value)}
+                        className="search-input"
+                      />
+                      <FaTimes className="close-icon" onClick={toggleSearch} />
+                    </div>
+                  )}
+                    </i>
+                    <i className="i-nav"><CgProfile /></i>
+                    <i className="i-nav">
+                      <HiOutlineShoppingCart />
+                      <p className="cartcount">1</p>
+                    </i>
+                  </div> */}
           <h2 className="fade-in h2">Fashion Sale</h2>
           <h1 className="slide-up h1" color="red">Minimal Menz Style</h1>
           <p className="zoom-in p">

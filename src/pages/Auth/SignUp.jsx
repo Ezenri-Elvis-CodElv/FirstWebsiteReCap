@@ -1,8 +1,8 @@
-// import "";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { SyncLoader } from "react-spinners";
 import { ToastContainer, toast } from "react-toastify";
+import './signup.css'
 import "react-toastify/dist/ReactToastify.css";
 
 
@@ -120,7 +120,7 @@ const SignUp = () => {
         </button>
 
         <p className="login-text">
-          Already have an account? <span className="login-link" onClick={() => navigate("/login")}>Login</span>
+          Already have an account? <span className="login-link" onClick={() => navigate("/login")}>Login</span> Here
         </p>
          </div>
       </form>

@@ -2,14 +2,18 @@
     width: 100%;
     height: 110vh;
     background-color: rgb(31, 29, 29);
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
 }
 
+.mobileviewfooterwrapper{
+    display: none;
+}
 .FooterHlder{
     width: 83%;
     height: 100%;
+    display: block;
     /* background-color: blue; */
 }
 
@@ -188,4 +192,120 @@
     transition: all 350ms ease-in;
     transform: scaleY(1.07);
     text-decoration: underline;
+}
+
+
+@media screen and (max-width: 480px) {
+    .FooterHlder{
+       display: none; 
+    }
+
+    .FooterWrapper{
+        background: black;
+    }
+
+    .headermobilev.fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: #4c4c4c;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 10px;
+        z-index: 1000;
+        animation: slideDown 0.3s ease-in-out;
+    }
+
+    @keyframes slideDown {
+        from {
+            transform: translateY(-100%);
+        }
+        to {
+            transform: translateY(0);
+        }
+    }
+    
+
+    .mobileviewfooterwrapper{
+        width: 100%;
+        height: max-content;
+        display: block;
+        /* background-color: aqua; */
+        flex-direction: column;
+        /* padding: 20px; */
+        gap: 20px;
+        padding-bottom: 50px;
+        color: white;
+        background-color: rgb(27, 26, 26);
+        
+    }
+
+    .mobileFooterNav{
+        margin-top: 120px;
+    }
+
+    .mobileFooterHlder{
+       width: 100%;
+       height: 100%;
+       background-color: rgb(27, 26, 26);
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: flex-start;
+    }
+
+    .mobileFooterHeader{
+        /* padding-top: 10px; */
+        /* padding-bottom: 10px; */
+        width: 100%;
+        height: fit-content;
+        padding-bottom: 30px;
+        /* background-color: chartreuse; */
+        display: flex;
+        flex-direction: column;
+       border-bottom: 1px solid grey;
+    }
+    .mobileFooterHeader h3{ 
+        font-size: 24px;
+        font-weight: 900;
+    }
+    .mobileFooterHeader p{ 
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .moblieFooterInp1{
+        /* background-color: coral; */
+        display: flex;
+        flex-direction: column;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        gap: 10px;
+    }
+     
+    .mobileEmailFooter{
+        width: 100%;
+        height: 50px;
+    }
+    .scrbtnmobileEmailFooter{
+        width: 100%;
+        height: 50px;
+        background-color: red;
+        color: white;
+        font-size: 18px;
+        font-weight: 500;
+        border: none;
+    }
+
+    .mobileifooter{
+        font-size: 25px;
+    }
+
+    .mobileFooterfooter{
+        font-size: 10px;
+        font-weight: 600;
+        width: 100%;
+    }
+
 }

@@ -20,6 +20,7 @@ import React, { useState, useEffect } from 'react';
 // import LogoSpinner from './LogoSpinner';
 import Spinner from './components/Spinner';
 import ProductDetails from './pages/ProductDetails';
+import ProductCheckout from './pages/ProductCheckOut';
 
 
 
@@ -31,6 +32,16 @@ const router = createBrowserRouter([
     path: "",
     element: <HomeRoutes />,
     children: [
+      {
+        path: "/productcheckout",
+        element:<ProductCheckout />
+      },
+      {
+        path: "/productdetails",
+        element:<ProductDetails />
+      },
+
+
       {
         path: "",
         element: <Home />,
@@ -72,17 +83,17 @@ const router = createBrowserRouter([
           </Spinner>
         ),
       },
-      {
-        path: "/cart",
-        element: (
-          <Spinner>
+      // {
+      //   path: "/cart",
+      //   element: (
+      //     <Spinner>
 
-          <PrivateRoute>
-            <Cart />
-          </PrivateRoute>
-          </Spinner>
-        ),
-      },
+      //     <PrivateRoute>
+      //       <Cart />
+      //     </PrivateRoute>
+      //     </Spinner>
+      //   ),
+      // },
       {
         path: "/collection",
         element: (
@@ -134,6 +145,7 @@ const router = createBrowserRouter([
     path: "/signup",
     element:<SignUp />
   },
+ 
   
 ]);
 

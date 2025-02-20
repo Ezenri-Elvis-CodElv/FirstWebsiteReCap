@@ -13,7 +13,7 @@ const ProductDetails = () => {
       </div>
       <div className="detailwrapper">
         <div className="detailproductimage">
-          <img src="src/assets/productdetail.webp" alt="" />
+          <img src="src/assets/productdetail.webp" alt="" className="detailproductimagepicture" />
         </div>
         <div className="pricelistwrap">
           <div className="pricetextholder">

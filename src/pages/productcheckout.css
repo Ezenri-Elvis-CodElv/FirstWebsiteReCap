@@ -1,0 +1,231 @@
+.checkoutwrapper {
+    width: 100%;
+    height: max-content;
+    background-color: darkgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.checkoutwrapperbody {
+    width: 100%;
+    height: 160px;
+    background-color: #f2e9d8;
+    color: rgb(62, 61, 61);
+    text-align: center;
+    gap: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-top: 30px; */
+}
+h2 {
+    margin: 0;
+    margin-top: 40px;
+    font-weight: 600;
+    font-size: 29px;
+}
+
+.checkouttextwrapper {
+    width: 20%;
+    height: max-content;
+    /* background-color: blueviolet; */
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    gap: 10px;
+    color: rgb(118, 117, 117);
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* .checkoutdetails {
+    width: 100%;
+    height: 400px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 10px;
+}
+
+.checkoutinput {
+    width: 80%;
+    height: 40px;
+    background-color: rgb(241, 239, 239);
+    display: flex;
+    flex-direction: column;
+} */
+
+/* Container */
+
+/* General Styles */
+.container {
+    width: 90%;
+    margin: auto;
+    font-family: Arial, sans-serif;
+    padding: 15px;
+  }
+  
+  @media (max-width: 1024px) {
+    .container {
+      width: 60%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      width: 80%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      width: 95%;
+    }
+  }
+  
+  /* Returning Customer Section */
+  .returning-customer {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .returning-customer a {
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .returning-customer a:hover {
+    text-decoration: underline;
+    color: darkred;
+  }
+  
+
+  .login-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+    justify-content: space-between;
+  }
+  
+  .login-form input {
+    flex: 1;
+    min-width: 48%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s;
+  }
+  
+  .login-form input:focus {
+    border-color: red;
+    outline: none;
+  }
+  
+
+  .login-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  
+  .login-btn, .applycouponbtn {
+    position: relative;
+    overflow: hidden;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 10%;
+    transition: all 0.3s ease-in-out;
+  }
+  .applycouponbtn{
+    width: 20%;
+    font-size: 15px;
+  }
+  .login-btn:hover, .applycouponbtn:hover {
+    background-color: darkred;
+  }
+  
+  
+  .login-btn::before, .applycouponbtn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: left 0.3s ease-in-out;
+  }
+  
+  .login-btn:hover::before, .applycouponbtn:hover::before {
+    left: 100%;
+  }
+  
+  
+  .checkbox-container {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+  }
+  
+  .checkbox-container input {
+    margin-right: 5px;
+  }
+  
+  
+  .coupon-section {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .coupon-section a {
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .coupon-section a:hover {
+    text-decoration: underline;
+    color: darkred;
+  }
+  
+  
+  .coupon-section input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 0;
+    font-size: 16px;
+    transition: 0.3s;
+  }
+  
+  .coupon-section input:focus {
+    border-color: red;
+    outline: none;
+  }

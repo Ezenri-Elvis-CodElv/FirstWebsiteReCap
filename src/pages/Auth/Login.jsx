@@ -3,6 +3,7 @@ import { FiEyeOff, FiEye } from "react-icons/fi";
 import { useContext, useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 // import { AuthContext } from "../../routes/PrivateRoutes";
 
 const Login = () => {
@@ -15,7 +16,7 @@ const Login = () => {
     e.preventDefault();
 
     if (!email || !password) {
-      alert("Enter your details 😎");
+      toast("Enter your details 😎");
       return;
     }
 
@@ -27,7 +28,7 @@ const Login = () => {
       // console.log("Login Response:", response);
       localStorage.setItem("userData", JSON.stringify(response?.data?.data));
 
-      alert(response?.data?.message || "Login Successful!");
+      toast(response?.data?.message || "Login Successful!");
 
       setTimeout(() => {
         navigate("/");
@@ -37,9 +38,9 @@ const Login = () => {
       console.error("Login Error:", err);
 
       if (err.response) {
-        alert(err.response?.data?.message || "Invalid login credentials");
+        toast(err.response?.data?.message || "Invalid login credentials");
       } else {
-        alert("Something went wrong. Try again later!");
+        toast("Something went wrong. Try again later!");
       }
     }
   };
