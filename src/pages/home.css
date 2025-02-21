@@ -219,6 +219,9 @@
     width: 100%;
     height: 70vh;
     /* background-color: black; */
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -612,6 +615,7 @@
     width: 100%;
     height: max-content;
     /* background-color: #333; */
+    display: flex;
     flex-direction: column;
     align-items: center;  
     justify-content: center;
@@ -624,7 +628,7 @@
     /* background-color: aqua; */
     margin-left: 50px;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
     justify-content: space-between;
 }
@@ -654,7 +658,7 @@
 
 .latestnewsImage{
     width: 100%;
-    height: 300px;
+    height: 370px;
     
 }
 .latestNewsletter{
@@ -706,7 +710,7 @@
 
 .Wrap1er{
     width: 100%;
-    height: 80%;
+    height: 100%;
     /* background-color: rgb(41, 54, 34); */
     display: flex;
     flex-direction: row;
@@ -723,6 +727,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     padding: 0px 10px 0px 0px ;
     font-family: 'jost',sans-serif;
     
@@ -732,6 +737,32 @@
 .iconhld1{
     font-size: 80px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 480px) {
   .HomeWrapper{
@@ -774,6 +805,18 @@
     font-weight: smaller;
     font-family: sans-serif, Arial, Helvetica, sans-serif;
   }
+
+.Latestnewswrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+.LatestNews{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
   
   /* Hero Section: 100% width and 70% height of viewport */
   .hero-section {
@@ -857,6 +900,12 @@
     font-weight: 500;
     color: #2B2B2B;
   }
+
+.latestnewsimgandtext{
+  margin-right: 40px;
+}
+
+
   .downicon p{
     font-size: 14px;
     font-family: "jost", sans-serif;
@@ -881,6 +930,11 @@
   align-items: center;
   justify-content: center;
   /* background: green; */
+}
+
+.latestnewsImage{
+  width: 100%;
+  height: 370px;
 }
 
 .categories-wrapper{
